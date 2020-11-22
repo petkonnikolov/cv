@@ -1,0 +1,302 @@
+# Page settings
+
+baseurl = "https://petkonnikolov.github.io/cv/"
+publishDir = "docs"
+languageCode = "en-us"
+title = "Petko Nikolov Resume"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-6.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Petko Nikolov"
+        tagline = "Information Security Architect"
+        avatar = "untitled.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: petko.nikolov@outlook.com"
+        title = "petko.nikolov@outlook.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+359 89 423 7579"
+        title = "+359 89 423 7579"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/pnnikolov"
+        title = "www.linkedin.com/in/pnnikolov"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/petkonnikolov"
+        title = "github.com/petkonnikolov"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "MSc in Computer Science"
+        college = "Sofia University St. Kliment Ohridski"
+        dates = "2010 - 2012"
+
+        [[params.education.list]]
+        degree = "BSc in Applied Mathematics"
+        college = "Baker College of Auburn Hills"
+        dates = "2003 - 2007"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Bulgarian"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Guitar"
+
+        [[params.interests.list]]
+        interest = "Snowboarding"
+
+        [[params.interests.list]]
+        interest = "Kite Surfing"
+
+        [[params.interests.list]]
+        interest = "Wakeboarding"
+
+        [[params.interests.list]]
+        interest = "Fitness Training"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "Experienced Information Security Professional with over 10 years of experience of planning, design, implementation and operation of information security solutions and processes for organizations ranging from small to large enterprise. Knowledgeable, organized, punctual and self-oriented. Diversified skillset ranging from technical to business-oriented approach of delivering the most appropriate solution for each organization."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Information Systems Architect - Security"
+        dates = "2016 – present "
+        company = "Hewlett-Packard / DXC Technology, Sofia Bulgaria"
+        details = "- Deliver business value to customers by architecture of effective information systems solutions in line with the business problems, needs and opportunities. \n- Follow organizationally set architecture strategy and vision and processes to evaluate current and desired state of architecture.\n- Develop architecture blue print and deployment documentation to guide the deployment of solutions and services.\n- Evaluate technologies and work with vendors and stakeholders on identifying the best solution based on business needs."
+
+        [[params.jobs.list]]
+        position = "Security Project Manager"
+        dates = "2014 - 2016"
+        company = "Hewlett-Packard, Sofia Bulgaria"
+        details = "- Lead security projects to implement security services - Vulnerability Scanning and Penetration Testing, Security Information and Event Management (SIEM).\n - Endpoint Security (antivirus).\n - Define requirements (security, business, functional).\n - Verify requirements are addressed through design, implementation until handover to steady operations."
+
+        [[params.jobs.list]]
+        position = "Endpoint Security Implementation Lead"
+        dates = "2012 - 2014"
+        company = "Hewlett-Packard, Sofia Bulgaria"
+        details = "- Define and integrate security and operational processes for delivering a continual security service.\n - Design, implement and manage large enterprise scale antivirus, anti-spyware and host intrusion prevention solutions.\n - Serve as main interface between customer, account teams and endpoint security operations team."
+
+        [[params.jobs.list]]
+        position = "Endpoint Security Delivery Lead"
+        dates = "2010 - 2012"
+        company = "Hewlett-Packard, Sofia Bulgaria"
+        details = "- Monitor, evaluate and respond to security events generated by endpoint security management tools.\n - Integrate and utilize core ITIL operations management processes within the specific service – incident, change and problem management."
+
+        [[params.jobs.list]]
+        position = "Network Security Specialist"
+        dates = "2008 - 2010"
+        company = "Caretower Ltd, Sofia Bulgaria"
+        details = "- Provide phone line and e-mail technical support for security software. Provide support on-site customer premises in a consulting capacity.\n - Install, configure and troubleshoot security software solutions\n - Provide pre-sales support – conduct product demos introducing the customer to functionality and scenarios for deployment, configuration and operation.\n - Perform audits to identify gaps in technical solutions with industry best standards and practices. Provide official reports. "
+
+        [[params.jobs.list]]
+        position = "Helpdesk Technical Support"
+        dates = "2007 - 2008"
+        company = "Tech Team Global"
+        details = "- Support scope including hardware of servers; thin, thick client workstations; customer kiosks; printers; registers; handhelds (RF units); tape drives; other devices and a varying degree of support of the software running on these devices.\n - Follow established IT operations processes.\n - Support Microsoft Windows, UNIX, Linux, IBM OS/2 Warp environments.\n - Troubleshoot and resolve incidents utilizing remote administration tools.\n - Investigate root causes of problems.\n - Troubleshoot user access, printing, networking, backup and various other incidents."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+
+        [[params.projects.list]]
+        title = "Certified Information Systems Security Professional (CISSP®)"
+        url = "https://www.youracclaim.com/org/isc2/badge/certified-information-systems-security-professional-cissp"
+        tagline = "Certificate # 450066"
+
+        [[params.projects.list]]
+        title = "The Open Group Certified: TOGAF® 9 Certified"
+        url = "https://www.youracclaim.com/org/the-open-group/badge/the-open-group-certified-togaf-9-certified"
+        tagline = "Certificate # 115334"
+
+        [[params.projects.list]]
+        title = "Microsoft Certified: Azure Solutions Architect Expert"
+        url = "https://www.youracclaim.com/org/microsoft-certification/badge/microsoft-certified-azure-solutions-architect-expert"
+        tagline = "Certificate # H563-1414"
+
+        [[params.projects.list]]
+        title = "Microsoft Certified: Azure Security Engineer Associate"
+        url = "https://www.youracclaim.com/org/microsoft-certification/badge/microsoft-certified-azure-security-engineer-associate"
+        tagline = "Certificate # H578-5726"
+
+        [[params.projects.list]]
+        title = "Project Management Professional (PMP)®"
+        url = "https://www.youracclaim.com/org/project-management-institute/badge/project-management-professional-pmp"
+        tagline = "Certificate # 1619141"
+
+        [[params.projects.list]]
+        title = "IT Service Management (ITIL v3 Foundation)"
+        tagline = "Certificate # 100256280"
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Project and program management"
+        level = "80%"
+                
+        [[params.skills.list]]
+        skill = "Requirements, schedule, budget, stakeholder, contracts, risk, issue  and change management"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Security and risk management"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Develop technical and business documentation - plans, technical designs and process documentation"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "End point security - host anti-virus, spam, personal firewall, host IPS and device control by industry product leaders"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Windows server operating systems administration – active directory, DNS, DHCP, IIS"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Windows desktop operating systems administration"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Linux and Mac OS X systems administration"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Virtualization platforms"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Routing and switching and network traffic filtering"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Vulnerability scanning and assessment"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Security event management and incident response"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Public cloud computing – AWS, Azure"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Identification and management of stakeholders in multiple areas including business, management and technical"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Management of service providers and service contracts"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Coordination of activities by resources from multiple functional teams"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Microsoft Office tools – Word, Excel, MS Project, Visio"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Infrastructure design – high-availability, load balancing and network traffic optimization"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Data loss prevention and encryption"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Web & mail filtering "
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Data backup and disaster recovery"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
